@@ -1,0 +1,84 @@
+{
+  "experiment_1_dual_ma_timing_gold": {
+    "params": {
+      "fast": 20,
+      "slow": 120
+    },
+    "period": "2021-05-14 ~ 2026-09-08",
+    "strategy": {
+      "full_sample": {
+        "annual_return": 0.1814,
+        "annual_vol": 0.1603,
+        "sharpe": 1.13,
+        "max_drawdown": -0.2489
+      },
+      "out_of_sample_2024+": {
+        "annual_return": 0.3346,
+        "annual_vol": 0.205,
+        "sharpe": 1.63,
+        "max_drawdown": -0.2489
+      }
+    },
+    "buy_hold": {
+      "full_sample": {
+        "annual_return": 0.1893,
+        "annual_vol": 0.1747,
+        "sharpe": 1.08,
+        "max_drawdown": -0.3052
+      },
+      "out_of_sample_2024+": {
+        "annual_return": 0.2941,
+        "annual_vol": 0.2213,
+        "sharpe": 1.33,
+        "max_drawdown": -0.3052
+      }
+    }
+  },
+  "experiment_2_reversal_factor": {
+    "params": {
+      "lookback_days": 120,
+      "horizon_days": 20,
+      "top_n": 2
+    },
+    "ic_full_sample": {
+      "ic_mean": 0.1018,
+      "icir": 0.19,
+      "ic_positive_ratio": 0.6094,
+      "periods": 64
+    },
+    "ic_out_of_sample_2024+": {
+      "ic_mean": 0.2,
+      "icir": 0.34,
+      "ic_positive_ratio": 0.6452,
+      "periods": 31
+    },
+    "rotation": {
+      "full_sample": {
+        "annual_return": 0.1526,
+        "annual_vol": 0.2356,
+        "sharpe": 0.65,
+        "max_drawdown": -0.3885
+      },
+      "out_of_sample_2024+": {
+        "annual_return": 0.4095,
+        "annual_vol": 0.2711,
+        "sharpe": 1.51,
+        "max_drawdown": -0.2184
+      }
+    },
+    "equal_weight": {
+      "full_sample": {
+        "annual_return": 0.0656,
+        "annual_vol": 0.2062,
+        "sharpe": 0.32,
+        "max_drawdown": -0.3705
+      },
+      "out_of_sample_2024+": {
+        "annual_return": 0.2297,
+        "annual_vol": 0.249,
+        "sharpe": 0.92,
+        "max_drawdown": -0.1748
+      }
+    }
+  }
+}
